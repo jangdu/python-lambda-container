@@ -1,3 +1,9 @@
+import tensorflow as tf
 import sys
 def handler(event, context):
-    return 'Hello from AWS Lambda using Python' + sys.version + '!'
+    
+    print(tf.__version__)
+
+    return {
+        "message": 'Hello from AWS Lambda using Python' +'(sys: ' + sys.version + '), (tf: ' + tf.__version__ + ')' + '!',
+        }
