@@ -1,0 +1,3 @@
+{
+  "data": "tensor = tf.constant([[8, 4], [3, 4]])\nresult = tf.math.add(tensor, tensor)"
+}
